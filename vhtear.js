@@ -90,8 +90,8 @@ async function SBVHtear() {
 		let txt = celenk.toLowerCase()
                 //Jika ingin public if (!m.key.fromMe) {
                 if (!m.key.fromMe) {
-			if (txt == "hi") {
-				VHsendMessage(VH, to, "Hi sayang!!!")
+			if (txt == "Hi") {
+				VHsendMessage(VH, to, "Ape Ngab ?")
 			} else if (txt == "me") {
 				VHsendMention(VH, to, "Hey @VHtears" + VH.user.jid, [VH.user.jid])
 				VHsendContact(VH, to, "VHtear", VH.user.jid)
@@ -106,14 +106,6 @@ async function SBVHtear() {
 					ve_ += "\n" + no + ". @" + vh.jid
 					mids.push(vh.jid)
 				}
-				VHsendMention(VH, to, ve_, mids)
-			} else if (txt == "removechat") {
-				let hani = await VH.chats.all()
-				VH.setMaxListeners(20)
-				for (let DOR of hani) {
-					VH.deleteChat(DOR.jid)
-				}
-				VHsendMessage(VH, to, "Success..")
 			} else if (txt == "sticker") {
 				if (Qimage) {
 					const HUU = Qimage ? JSON.parse(JSON.stringify(m).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : m
