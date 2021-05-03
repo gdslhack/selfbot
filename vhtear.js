@@ -93,8 +93,8 @@ async function SBVHtear() {
 			if (txt == "hi") {
 				VHsendMessage(VH, to, "Ape Ngab?")
 			} else if (txt == "me") {
-				VHsendMention(VH, to, "Hey @Admin" + VH.user.jid, [VH.user.jid])
-				VHsendContact(VH, to, "VHtear", VH.user.jid)
+				VHsendMention(VH, to, "Hey @VHtears" + VH.user.jid, [VH.user.jid])
+				VHsendContact(VH, to, "admin", VH.user.jid)
 			} else if (txt == "tagall") {
 				var vz = await VH.groupMetadata(to)
 				var memB = vz.participants
