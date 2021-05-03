@@ -31,7 +31,7 @@ const {
 	Searchanime
 } = require('./Liberary/VHtearFunc');
 
-const PremiumKey = "Chat to buy https://wa.me/6281238552767"
+const PremiumKey = "2e79255a57ae41fdbab902bea1d8e9fe"
 const Host = "https://api.vhtear.com"
 
 function os_func() {
